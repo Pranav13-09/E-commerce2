@@ -1,0 +1,147 @@
+.banner {
+  height: 100vmin;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(
+    90deg,
+    #2c0e5c,
+    #471f72,
+    #633089,
+    #7f41a0,
+    #9c54b8,
+    #ba67cf,
+    #d97ae7,
+    #f98eff
+  );
+  color: white;
+}
+.banner h1 {
+  font: 600 3vmax "Roboto";
+}
+.banner p {
+  font: 300 2vmax "Lucida Sans";
+}
+.banner > a > button {
+  border: 1px solid white;
+  cursor: pointer;
+  background: white;
+  margin-top: 5vmax;
+  transition: all 0.5s;
+  width: 9vmax;
+  font-size: 1.5vmax;
+}
+
+.banner > a > button:hover {
+  background-color: #471f72;
+  color: white;
+}
+.banner::after {
+  content: "";
+  width: 100vw;
+  height: 100vmin;
+  background-color: white;
+  position: absolute;
+  top: 2;
+  left: 0;
+  max-width: 100%;
+  clip-path: polygon(100% 61%, 0% 100%, 100% 100%);
+}
+.homeHeading {
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 1.4vmax;
+  border-bottom: 1px solid rgb(21, 21, 21, 0.5);
+  width: 20vmax;
+  margin: 5vmax auto;
+  padding: 1vmax;
+  color: rgb(0, 0, 0, 0.7);
+}
+
+.container {
+  display: flex;
+  width: 80vw;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.productCard {
+  width: 19vmax;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: rgb(48, 48, 48);
+  margin: 2vmax;
+  transition: all 0.5s;
+  padding: 0.5vmax;
+  max-width: 100%;
+  box-shadow: 0 0 5px rgba(15, 15, 15, 0.26);
+}
+
+.productCard > img {
+  width: 18vmax;
+  height: 20vmax;
+}
+
+.productCard > div {
+  display: flex;
+  justify-content: center;
+  margin: 0.5vmax;
+  align-items: center;
+}
+
+.productCard > div > span {
+  margin: 0.5vmax;
+  font: 300 1vmax "Roboto";
+}
+.productCard:hover {
+  box-shadow: -11px 11px 7px 1px rgba(206, 205, 205, 0.74);
+  transform: translateY(-1vmax);
+}
+
+.productCard > p {
+  font-family: "Roboto";
+  font-size: 1.5vmax;
+  margin: 1vmax 0.5vmax;
+  margin-bottom: 0;
+  text-align: center;
+}
+.productCard > span {
+  margin: 0.2vmax;
+  color: tomato;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 2vmax;
+  text-align: center;
+}
+
+/* @media screen and (max-width: 600px) {
+  .container {
+    display: flex;
+    width: 80vw;
+    margin: 2vmax 1vmax;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .productCard > p {
+    font-size: 1.7vmax;
+  }
+
+  .productCard > div {
+    margin: 0vmax;
+    display: block;
+  }
+
+  .productCard > span {
+    font-size: 1.5vmax;
+  }
+
+  .productCard > div > span {
+    margin: 0 0.5vmax;
+    font: 300 1vmax "Roboto";
+  }
+} */

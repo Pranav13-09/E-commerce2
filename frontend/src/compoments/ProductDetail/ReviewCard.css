@@ -1,0 +1,32 @@
+img{
+width : 6vmax;
+}
+.ReviewCard{
+flex : none;
+    display : flex;
+    flex-direction: column;
+
+box-shadow: 0 0 5px rgba(0, 0, 0, 0.226);
+border: 1px solid rgba(56, 56, 56, 0.116);
+width: 30vmax;
+align-items: center;
+margin: 1vmax;
+margin-top : 3vmax;
+padding: 3vmax;
+}
+
+.ReviewCard>p {
+    color: rgba(0, 0, 0, 0.836);
+    font: 600 0.9vmax "Roboto";
+    margin-bottom :0;
+}
+.ReviewCard>span {
+  color: rgba(0, 0, 0, 0.445);
+  font: 500 0.8vmax cursive;
+
+}
+
+.ReviewCard:hover{
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.350);
+}
+
